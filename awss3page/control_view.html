@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <meta charset='UTF-8' />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="shorcut icon" href="./static/img/favicon.ico"/>
+    <link rel="stylesheet" href="./static/css/control_view.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.1.0/paho-mqtt.js" type="text/javascript"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.527.0.min.js" type="text/javascript"></script>
+    <script src="./static/js/jquery-3.4.1.min.js"></script>
+    <script src="./static/js/oneway_controller.js"></script>
+    <script src="./static/js/SigV4Utils.js"></script>
+    <script src="./static/js/control_view.js"></script>
+</head>
+
+<body>
+    <form monitor-view>
+        <div class="twoway-controller-view" id="camera-control">
+            <div class="ctrl-area" id="camangle-h-ctrl-area">
+                <div class="ctrl-title" id="camangle-h-ctrl-title">カメラ(水平)</div>
+                <div class="ctrl-val" id="camangle-h-ctrl-val"></div>
+                <canvas class="ctrl-cvs" id="camangle-h-ctrl-cvs" width="100px" height="100px"></canvas>
+            </div>
+            <div id="capture-view"></div>
+            <div class="ctrl-area" id="camangle-v-ctrl-area">
+                <div class="ctrl-title" id="camangle-v-ctrl-title">カメラ(垂直)</div>
+                <div class="ctrl-val" id="camangle-v-ctrl-val"></div>
+                <canvas class="ctrl-cvs" id="camangle-v-ctrl-cvs" width="100px" height="100px"></canvas>
+            </div>
+        </div>
+    </form>
+    <from>
+        <div class="twoway-controller-view" id="move-control">
+            <div class="ctrl-area" id="steering-ctrl-area">
+                <div class="ctrl-title" id="steering-ctrl-title">ステアリング</div>
+                <div class="ctrl-val" id="steering-ctrl-val"></div>
+                <canvas class="ctrl-cvs" id="steering-ctrl-cvs" width="100px" height="100px"></canvas>
+            </div>
+            <div class="ctrl-area" id="speed-ctrl-area">
+                <div class="ctrl-title" id="speed-ctrl-title">スピード</div>
+                <div class="ctrl-val" id="speed-ctrl-val"></div>
+                <canvas class="ctrl-cvs" id="speed-ctrl-cvs" width="100px" height="100px"></canvas>
+            </div>
+        </div>
+    </from>
+</body>
+
+</html>

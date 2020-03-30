@@ -1,0 +1,26 @@
+@startuml image
+title Wifi-HTTPでの実装イメージ
+node 家{
+    actor 俺
+    card Mobile{
+        card WebBrowser{
+            component JQuery
+        }
+    }
+    card miniCar{
+        card RaspberryPi{
+            Card Django{
+                component WebPage
+                component WebApi
+            }
+            card GPIO
+        }
+        card DCMotor 
+        card ServoMotor
+        GPIO-->DCMotor
+        GPIO-->ServoMotor
+    }
+}
+WebPage-->WebBrowser:download
+JQuery-->WebApi:Ajax
+@enduml

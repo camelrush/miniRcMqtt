@@ -1,0 +1,57 @@
+body {
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background: cadetblue;
+}
+
+.ctrl-area {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#camangle-h-ctrl-area {
+    float: left;
+}
+
+#camangle-v-ctrl-area {
+    float: left;
+}
+
+#steering-ctrl-area {
+    clear: left;
+    float: left;
+    padding-left :90px;
+}
+
+#speed-ctrl-area {
+    float: left;
+}
+
+.ctrl-title {
+    margin: 3px;
+    background: darkblue;
+    color: white;
+    height: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.ctrl-val {
+    margin: 3px;
+    background: white;
+    height: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.ctrl-cvs {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background: black;
+    border-radius: 10px;
+}
